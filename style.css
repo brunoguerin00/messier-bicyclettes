@@ -1,0 +1,82 @@
+/*
+ Theme Name:   Theme Messier Bicyclettes
+ Description:  Theme pour la boutique en ligne de la boutique Messier Bicyclettes
+ Author:       Bruno Guerin
+ Author URI:   https://www.brunoguerin.com
+ Template:     leto
+ Version:      1.0.1
+ Tags:         Velo, boutique, e-commerce
+*/
+
+section#diaporama{
+    height: 90vh ;
+    overflow: hidden;
+    position: relative ;
+    padding: 2rem 0;
+}
+section#diaporama img{
+    max-width: 100%;
+}
+section#diaporama>a{
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    font-size: 3rem;
+    transform: scaleY(2);
+}
+section#diaporama>a.solitaire{
+    display: none;
+}
+section#diaporama>a:nth-child(1){
+    left: 2%
+}
+section#diaporama>a:nth-child(3){
+    right: 2%
+}
+section#diaporama .diapositive{
+    height: 90vh ;
+    position: absolute ;
+    width: 100%;
+    transition: 1s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-size: cover;
+}
+section#diaporama .diapositivea.bouton{
+	align-self: center;
+	color: white;
+	background-color: #4E9C02;
+	padding: 1rem 3rem;
+	border-radius:1rem
+}
+section#diaporama .diapositivea.bouton:hover{
+	background-color: #287600;
+	padding: 1rem 3rem;
+	border-radius:1rem
+}
+section#diaporama .diapositive.solitaire{
+    transform: translateX(0%) !important;
+}
+section#diaporama .diapositive:nth-child(1){
+    transform: translateX(-100%);
+    z-index: 5;
+}
+section#diaporama .diapositive:nth-child(2){
+    transform: translateX(0%);
+    z-index: 1;
+}
+section#diaporama .diapositive:nth-child(3){
+    transform: translateX(100%);
+    z-index: 2;
+}
+section#diaporama .diapositive:nth-child(4){
+    transform: translateX(200%);
+    z-index: 3;
+}
+section#diaporama .diapositive:nth-child(5){
+    transform: translateX(300%);
+    z-index: 4;
+}
